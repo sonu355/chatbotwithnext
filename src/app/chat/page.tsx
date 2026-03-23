@@ -15,7 +15,6 @@ import {
     Conversation,
     ConversationContent,
     ConversationScrollButton,
-    // ConversationLoader
 } from "@/components/ai-elements/conversation"
 import { Input } from "@base-ui/react";
 import { Markdown } from "@/components/ui/markdown";
@@ -23,13 +22,10 @@ import { Markdown } from "@/components/ui/markdown";
 
 export default function RAGChatBot() {
     const [input, setInput] = useState("");
-    
-    // Note: status in v6 can be 'ready', 'submitted', or 'streaming'
     const { messages, sendMessage, status } = useChat();
 
     const handleSubmit = (message: any) => {
         if (!message.text) return;
-        // sendMessage expects an object with the text
         sendMessage({ text: message.text });
         setInput("");
     };

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1772704665663,
+      "tag": "0000_flimsy_the_liberteens",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1772705152791,
+      "tag": "0001_hot_wonder_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1774257703570,
+      "tag": "0002_parallel_blue_marvel",
+      "breakpoints": true
+    }
+  ]
+}
