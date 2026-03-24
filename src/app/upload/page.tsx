@@ -26,6 +26,19 @@ export default function PDFUpload() {
             formData.append("pdf", file);
             
             const result = await processPDFFile(formData)
+
+            if(result.success) {
+                setMessage({
+                    type: 'success',
+                    text: result.message || "PDF Created Successfully"
+                })
+                e.target.value = ""
+            }else{
+                setMessage({
+                    type: 'error',
+                    text: result.message || "Failed to process PDF"
+                })
+            }
         } catch (err) {
             setMessage({
                 type: "error",

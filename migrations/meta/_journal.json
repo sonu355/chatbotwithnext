@@ -22,6 +22,13 @@
       "when": 1774257703570,
       "tag": "0002_parallel_blue_marvel",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1774258052344,
+      "tag": "0003_futuristic_pet_avengers",
+      "breakpoints": true
     }
   ]
 }
